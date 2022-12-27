@@ -5,16 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DoliaPets AR</title>
+    <title>My DoliaPets AR</title>
 
+    <meta itemprop="image" content="./assets/DoliaPetsAR-logo.svg">
+    <meta itemprop="name" content="DoliaPets AR game" />
+    <meta itemprop="description" content="Experience the excitement of virtual pet ownership and enter a unique metaverse with My DoliaPEts AR, the mobile browser game featuring adorable doliacats and cutting-edge NFT and blockchain technology. Build your collection of one-of-a-kind virtual pets and explore an immersive world filled with endless possibilities." />
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="My DoliaPets AR">
+    <meta property="og:description" content="Experience the excitement of virtual pet ownership and enter a unique metaverse with My DoliaPEts AR, the mobile browser game featuring adorable doliacats and cutting-edge NFT and blockchain technology.">
+    <meta property="og:url" content="https://mdpar.doliacats.xyz/">
+    <meta property="og:image" content="./assets/DoliaPetsAR-logo.svg">
+    <meta property="og:site_name" content="My DoliaPets AR">
+    <meta property="og:locale" content="en_EN">
+
+    <meta http-equiv="Cache-Control" content="max-age=31536000" />
+
+    <meta name="description" content="Multi-chain Project">
+    <meta name="keywords" content="virtual pets, doliacats, NFTs, blockchain, mobile browser game, Dolia Cats, AR">
+
+    <link rel="shortcut icon" href="./assets/DoliaPetsAR-logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <video class="cats_video" width="100%" autoplay muted loop playsinline>
+    
+    <div class="preloader">
+        <div class="dot">
+        </div>
+        <div class="dot">
+        </div>
+        <div class="dot">
+        </div>
+        <div class="dot">
+        </div>
+        <div class="dot">
+        </div>
+    </div>
 
+    <video class="cats_video" width="100%" preload="metadata" autoplay muted loop playsinline>
         <source src="./assets/background-video.webm" type="video/webm" />
-
+        <source src="./assets/phone-video.mp4" type="video/mp4" />
     </video>
 
     <section class="header">
@@ -35,8 +66,9 @@
                 <img width="100%" src="./assets/video-icons-top.svg" alt="icons">
             </div>
             <div class="header-right-video-container">
-                <video class="header-right-video" width="100%" height="100%" autoplay muted loop playsinline>
+                <video class="header-right-video" width="100%" height="100%" preload="metadata" autoplay muted loop playsinline>
                     <source src="./assets/phone-video.webm" type="video/webm" />
+                    <source src="./assets/phone-video.mp4" type="video/mp4" />
                 </video>
             </div>
             <div class="bot-ui">
@@ -79,8 +111,9 @@
                 <img class="pet-2" src="./assets/Pet2.png" alt="Pet2">
             </div>
             <div class="phone-video-container">
-                <video class="phone-video"  autoplay muted loop playsinline>
+                <video class="phone-video" preload="metadata" autoplay muted loop playsinline>
                     <source src="./assets/phone-video-full.webm" type="video/webm" />
+                    <source src="./assets/phone-video-full.mp4" type="video/mp4" />
                 </video>
             </div>
             <div class="phone-right">
@@ -98,7 +131,7 @@
     <section class="activities">
         <div class="activities-top">
             <div class="activities-image-container">
-                <img class="activities-image" src="./assets/activities-logo.png" alt="act">
+                <img class="activities-image" src="./assets/activities-logo.svg" alt="act-logo">
             </div>
             <div class="activities-content">
                 <h1 class="section-heading">
@@ -119,18 +152,24 @@
                 <img class="stats-picture" src="./assets/activities-stats.png" alt="stats">
                 <div class="stats-text-container">
                     <p class="stats-text">
-                        In the <span class="yellow-text">Dolia Pet AR</span> game, a play-to-earn mode might involve players completing tasks and activities to <span class="yellow-text">earn virtual currency</span> or items that can be used to care for their virtual Dolia Pet. 
+                        In the <span class="yellow-text">Dolia Pet AR</span> game, a play-to-earn mode might involve
+                        players completing tasks and activities to <span class="yellow-text">earn virtual
+                            currency</span> or items that can be used to care for their virtual Dolia Pet.
                     </p>
                 </div>
             </div>
             <div class="jumping">
-                <video class="jump-video" width="100%" height="100%" autoplay muted loop playsinline>
+                <video class="jump-video" width="100%" height="100%" preload="metadata" autoplay muted loop playsinline>
                     <source src="./assets/jump.webm" type="video/webm" />
+                    <source src="./assets/jump.mov" type="video/mp4" />
                 </video>
                 <img class="jumping-picture" src="./assets/jumping-icons.svg" alt="icons">
                 <div class="jumping-text-container">
                     <p class="jumping-text">
-                        For example, players might be able to earn <span class="yellow-text">rewards</span> for playing with their cat, feeding them, or completing mini-games. These rewards could then be used to <span class="yellow-text">purchase items</span> or <span class="yellow-text">customizations</span> for the player's virtual pet.
+                        For example, players might be able to earn <span class="yellow-text">rewards</span> for playing
+                        with their cat, feeding them, or completing mini-games. These rewards could then be used to
+                        <span class="yellow-text">purchase items</span> or <span
+                            class="yellow-text">customizations</span> for the player's virtual pet.
                     </p>
                 </div>
             </div>
@@ -144,8 +183,10 @@
         </div>
         <div class="footer-icons-container">
             <div class="footer-social">
-                <img src="./assets/discord-icon.svg" alt="discord">
-                <img src="./assets/twitter-icon.svg" alt="twitter">
+                <a href="https://discord.com/invite/RetekYNarD"><img class="discord-icon"
+                        src="./assets/discord-icon.svg" alt="discord"></a>
+                <a href="https://twitter.com/DoliaCats"><img class="twitter-icon" src="./assets/twitter-icon.svg"
+                        alt="twitter"></a>
             </div>
             <div class="footer-pets-logo">
                 <img width="100%" src="./assets//DoliaPetsAR-logo.svg" alt="doliapets logo">
@@ -155,6 +196,7 @@
             </div>
         </div>
     </footer>
+    <script src="./main.js"></script>
 </body>
 
 </html>
