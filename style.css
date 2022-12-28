@@ -13,6 +13,10 @@
     src: url("fonts/Roboto-Regular.ttf") format("truetype");
 }
 
+.test {
+    width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -115,14 +119,14 @@ a {
     align-items: center;
 }
 
-.header-right-video-container {
-    overflow: hidden;
+.header-right-video {
     width: 75%;
+    height: auto;
     border-radius: 12%;
 }
 
-.header-right-video {
-    width: 100%;
+.header-right-video-iphone {
+    width: 53%;
     border-radius: 12%;
 }
 
@@ -140,7 +144,6 @@ a {
 .dolia-pets-ar {
     width: 100%;
     max-width: 1440px;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
 }
@@ -462,6 +465,8 @@ footer {
     padding-left: 0.5rem;
 }
 
+/* UTILS */
+
 .yellow-text {
     color: #FFC9A1;
 }
@@ -669,7 +674,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* left: auto; */
+
     }
 
     .phone-video {
@@ -800,11 +805,26 @@ footer {
     }
 }
 
-
+@media (max-width: 400px) { 
+    .header-left {
+        gap: 0;
+        justify-content: space-around;
+        padding-top: 0;
+    }
+}
 
 @media (max-width: 460px) {
     .header-logo {
-        width: 80%;
+        width: 60%;
+    }
+
+    .header-left {
+        gap: 1rem;
+        justify-content: start;
+    }
+
+    .header-right-video {
+        width: 60%;
     }
 
     .activities .section-heading {
@@ -836,6 +856,21 @@ footer {
         right: 0%;
         bottom: -18%;
         width: 30%;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 599px) {
+    .header-right-video {
+        width: 44%;
+    }
+
+    .header-left {
+        gap: 0.5;
+        justify-content: start;
+        padding-top: 0;
+    }
+    .header-right {
+        justify-content: end;
     }
 }
 
