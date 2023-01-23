@@ -139,6 +139,40 @@ a {
 }
 
 
+/* UNIqunes section */
+.uniquness-section {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #110E31;
+    border-radius: 40px;
+}
+
+
+
+.uniquness-picture-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem ;
+    width: 100%;
+}
+
+.uniq-img {
+    width: 100%;
+}
+
+.uniquness-text {
+    width: 85%;
+    font-size: 1.25em;
+    padding: 1rem 0 3.6rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 /* AR section */
 
 .dolia-pets-ar {
@@ -148,52 +182,18 @@ a {
     flex-direction: column;
 }
 
-.ar {
-    background: #110E31;
-    border-radius: 40px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-    margin-bottom: 6rem;
-
-}
-
-.cat-canister-container {
-    position: absolute;
-    top: -30%;
-    left: 0;
-    width: 45%;
-    z-index: 100;
-}
-
-.cat-canister {
-    width: 100%;
-}
-
-.ar-text-container {
-    width: 50%;
-    text-align: left;
-}
 
 .section-heading {
     background: linear-gradient(135deg, #5300DC 0%, #FF007D 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    line-height: 90px;
     font-weight: 700;
     font-size: 6.25em;
     padding-top: 4.25rem;
     text-transform: uppercase;
 }
 
-.ar-text {
-    font-size: 1.25em;
-    padding: 1rem 4.6rem 4.6rem 0;
-    font-family: 'Roboto', sans-serif;
-}
 
 .phone {
     display: flex;
@@ -324,14 +324,14 @@ a {
     margin-top: 1rem;
 }
 
-.like-icon {
+.coin-1-icon {
     position: absolute;
     left: 50%;
     bottom: -18%;
     width: 18%;
 }
 
-.cart-icon {
+.coin-2-icon {
     position: absolute;
     right: 5%;
     bottom: 0;
@@ -629,30 +629,34 @@ footer {
         padding-top: 1rem;
     }
 
-    /* AR */
+    /* Uniquness */
 
-    .ar {
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        margin-bottom: 3rem;
+    .uniquness-heading {
+        font-size: 5em;
     }
+
+    .uniquness-picture-container {
+        flex-direction: column;
+    }
+
+    .uniq-img:nth-child(2) {
+        width: 90%;
+        background-color: red;
+    }
+
+    .uniq-img:nth-child(5) {
+        width: 90%;
+    }
+
+
+    /* AR */
 
     .section-heading {
         padding-top: 2.25rem;
     }
 
-    .cat-canister-container {
-        right: 0;
-        left: auto;
-    }
-
-    .ar-text-container {
-        width: 100%;
-    }
-
-    .ar-text {
-        padding: 1rem 0;
+    .uniquness-text {
+        padding: 1rem 0 2rem;
     }
 
     /* Phone */
@@ -758,16 +762,16 @@ footer {
         align-items: center;
     }
 
-    .like-icon {
+    .coin-1-icon {
         left: 13%;
         width: 20%;
         bottom: -12%;
     }
 
-    .cart-icon {
+    .coin-2-icon {
         right: -2%;
         bottom: -23%;
-        width: 30%;
+        width: 28%;
     }
 
     .stats {
@@ -840,22 +844,30 @@ footer {
         padding-bottom: 0.5rem;
     }
 
-    .like-icon {
-        bottom: -13%;
+    .coin-1-icon {
+        bottom: -16%;
     }
 
-    .cart-icon {
+    .coin-2-icon {
         right: -1%;
-        bottom: -21%;
-        width: 30%;
+        bottom: -24%;
+        width: 28%;
+    }
+
+    .uniquness-heading {
+        font-size: 3.3em;
     }
 }
 
 @media (min-width: 461px) and (max-width: 520px) {
-    .cart-icon {
+    .coin-2-icon {
         right: 0%;
-        bottom: -18%;
+        bottom: -20%;
         width: 30%;
+    }
+
+    .uniquness-heading {
+        font-size: 4em;
     }
 }
 
@@ -897,20 +909,20 @@ footer {
     .phone-right-text-container {
         margin-top: -3rem;
     }
-    .cart-icon {
+
+    .coin-1-icon {
+        width: 15%;
+        bottom: -19%;
+    }
+
+    .coin-2-icon {
         right: 2%;
-        bottom: -5%;
+        bottom: -7%;
     }
 }
 
 @media (min-width: 601px) and (max-width: 850px) {
-    .ar {
-        margin-bottom: 0;
-    }
 
-    .cat-canister-container {
-        width: 51%;
-    }
     .activities .section-heading {
         font-size: 5em;
     }
@@ -932,29 +944,12 @@ footer {
     body{
         font-size: 10px;
     }
-    .ar {
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        margin-bottom: 3rem;
-    }
 
     .section-heading {
         padding-top: 2.25rem;
     }
 
-    .cat-canister-container {
-        right: 0;
-        left: auto;
-        width: 45%;
-    }
-
-    .ar-text-container {
-        width: 100%;
-    }
-
-    .ar-text {
-        padding: 1rem 0;
-        width: 62%;
+    .uniquness-text {
+        padding: 1rem 0 2rem;
     }
 }
