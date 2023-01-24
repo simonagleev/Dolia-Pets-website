@@ -72,9 +72,9 @@ a {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    /* gap: 2rem; */
+    gap: 2rem;
     padding-left: 2rem;
     font-size: 16px;
 }
@@ -219,9 +219,7 @@ a {
     display: flex;
     justify-content: center;
     position: relative;
-    /* height: 100vh; */
     padding-top: 8rem;
-    /* margin-bottom: 4rem; */
 }
 
 .phone-left {
@@ -841,15 +839,12 @@ footer {
     }
 }
 
-@media (max-width: 400px) { 
-    .header-left {
-        gap: 0;
-        justify-content: space-around;
-        padding-top: 0;
-    }
-}
 
 @media (max-width: 460px) {
+    .header {
+        margin-bottom: 25px;
+    }
+
     .header-logo {
         width: 60%;
     }
@@ -857,11 +852,25 @@ footer {
     .header-left {
         gap: 1rem;
         justify-content: start;
+        height: 50%;
+    }
+
+    .top-ui {
+        width: 50%;
+    }
+
+    .bot-ui {
+        width: 50%;
+    }
+
+    .header-right {
+        height: 50%;
     }
 
     .header-right-video {
         width: 60%;
     }
+
 
     .activities .section-heading {
         font-size: 4em;
@@ -896,6 +905,10 @@ footer {
 }
 
 @media (min-width: 461px) and (max-width: 520px) {
+    .header {
+        margin-bottom: 25px;
+    }
+
     .header-left {
         width: 100%;
         height: 50%;
