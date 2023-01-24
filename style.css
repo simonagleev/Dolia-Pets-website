@@ -72,9 +72,9 @@ a {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 2rem;
+    /* gap: 2rem; */
     padding-left: 2rem;
     font-size: 16px;
 }
@@ -161,6 +161,29 @@ a {
     padding: 1rem ;
     width: 100%;
 }
+
+.uniq-img-container {
+    width: 100%;
+}
+
+.uniq-img-container:nth-child(1) {
+    width: 25%;
+}
+.uniq-img-container:nth-child(2) {
+    width: 5%;
+}
+.uniq-img-container:nth-child(3) {
+    width: 60%;
+}
+.uniq-img-container:nth-child(4) {
+    width: 5%;
+}
+.uniq-img-container:nth-child(5) {
+    width: 25%;
+}
+
+
+
 
 .uniq-img {
     width: 100%;
@@ -608,25 +631,35 @@ footer {
 
     .header {
         flex-direction: column-reverse;
-
         height: 100vh;
     }
 
     .header-left {
         width: 100%;
-        height: 50%;
-        padding: 2rem;
+        height: 45%;
+        padding: 0 2rem;
         font-size: 10px;
+        justify-content: space-around;
     }
 
     .header-logo {
-        width: 60%;
+        width: 40%;
     }
 
     .header-right {
         width: 100%;
-        height: 50%;
+        height: 55%;
         padding-top: 1rem;
+    }
+    .header-right-video {
+        width: 40%;
+    }
+
+    .top-ui {
+        width: 40%;
+    }
+    .bot-ui {
+        width: 40%;
     }
 
     /* Uniquness */
@@ -860,6 +893,34 @@ footer {
 }
 
 @media (min-width: 461px) and (max-width: 520px) {
+    .header-left {
+        width: 100%;
+        height: 50%;
+        padding: 0 2rem;
+        font-size: 10px;
+        justify-content: space-around;
+    }
+
+    .header-logo {
+        width: 60%;
+    }
+
+    .header-right {
+        width: 100%;
+        height: 50%;
+        padding-top: 1rem;
+    }
+    .header-right-video {
+        width: 50%;
+    }
+
+    .top-ui {
+        width: 50%;
+    }
+    .bot-ui {
+        width: 50%;
+    }
+
     .coin-2-icon {
         right: 0%;
         bottom: -20%;
@@ -873,17 +934,14 @@ footer {
 
 @media (min-width: 461px) and (max-width: 599px) {
     .header-right-video {
-        width: 44%;
+        width: 40%;
     }
 
     .header-left {
-        gap: 0.5;
-        justify-content: start;
+        justify-content: space-around;
         padding-top: 0;
     }
-    .header-right {
-        justify-content: end;
-    }
+
 }
 
 
@@ -892,6 +950,11 @@ footer {
 @media (min-width: 601px) and (max-width: 1130px) {
     body {
         font-size: 12px;
+    }
+
+    .header-left {
+        justify-content: center;
+        gap: 2rem;
     }
 
     .activities-top {
