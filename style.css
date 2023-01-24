@@ -182,9 +182,6 @@ a {
     width: 25%;
 }
 
-
-
-
 .uniq-img {
     width: 100%;
 }
@@ -323,7 +320,6 @@ a {
     justify-content: space-around;
     align-items: center;
     padding-top: 5rem;
-    /* padding-bottom: 7.8rem; */
 }
 
 .activities-image-container {
@@ -632,6 +628,7 @@ footer {
     .header {
         flex-direction: column-reverse;
         height: 100vh;
+        margin-bottom: 25px;
     }
 
     .header-left {
@@ -722,6 +719,7 @@ footer {
     .phone-left {
         width: 100%;
         align-items: flex-start;
+        padding-top: 6rem;
     }
 
     .phone-left-text-container {
@@ -742,6 +740,7 @@ footer {
 
     .pet-1 {
         width: 50%;
+        margin-top: -27rem;
     }
 
     .phone-right-text-container {
@@ -890,6 +889,10 @@ footer {
     .uniquness-heading {
         font-size: 3.3em;
     }
+
+    .pet-1 {
+        margin-top: -14rem;
+    }
 }
 
 @media (min-width: 461px) and (max-width: 520px) {
@@ -929,6 +932,14 @@ footer {
 
     .uniquness-heading {
         font-size: 4em;
+    }
+
+    .phone-left {
+        padding-top: 3rem;
+    }
+
+    .pet-1 {
+        margin-top: -14rem;
     }
 }
 
